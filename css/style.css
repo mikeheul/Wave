@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Mr+Dafoe&display=swap');
 
 :root {
-    --blue: #62e9e0;
+    --blue: #56c7bf;
     --gray: #29282d;
     --orange: #f5b32a;
 }
@@ -58,6 +58,21 @@
     padding: 90px;
 }
 
+.text-heading {
+    text-align: center;
+}
+.text-heading h2 {
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+}
+.text-heading p {
+    font-size: 18px;
+    color: rgb(133, 133, 133);
+    padding: 10px 140px;
+}
+
 header {
     min-height: 100%;
 }
@@ -85,9 +100,7 @@ nav ul li:hover a {
     color: var(--blue);
 }
 
-a {
-    text-decoration: none;
-}
+a { text-decoration: none; }
 a:visited { color: #000 }
 
 h1, h2, h3 {
@@ -207,6 +220,7 @@ h1, h2, h3 {
 .video-img img {
     position: relative;
     width: 100%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.114) 0px 30px 60px -15px;
 }
 
 .play-button {
@@ -214,6 +228,7 @@ h1, h2, h3 {
     height: 90px;
     width: 90px;
     background: var(--blue);
+    opacity: 0.7;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -241,9 +256,18 @@ h1, h2, h3 {
 .video-text h1 {
     font-size: 40px;
     font-weight: 600;
+    letter-spacing: 4px;
+    line-height: 50px;  
 }
 .video-text h1 span {
     font-weight: 700;
+    color: var(--blue);
+}
+.video-text p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    color: rgb(133, 133, 133);
 }
 .video-text .btn {
     display: inline-flex;
@@ -262,7 +286,6 @@ h1, h2, h3 {
     flex-direction: column;
 }
 .events .row {
-    /* min-width: 100%; */
     display: flex;
     flex-wrap: wrap;
 }
@@ -287,7 +310,7 @@ h1, h2, h3 {
 }
 
 .event img {
-    width: 100%;
+    width: 650px;
     height: 100%;
     object-fit: cover;
     display: block;
@@ -299,6 +322,173 @@ h1, h2, h3 {
     filter: grayscale(1);
 }
 
+.abilities .row {
+    margin-top: 30px;
+    gap: 0px;
+    flex-wrap: wrap;
+}
+
+.ability-item {
+    text-align: center;
+    padding: 0 30px;
+}
+.ability-item .item-text h4 {
+    letter-spacing: 3px;
+    padding: 10px 0;
+}
+.ability-item .item-text p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    color: rgb(133, 133, 133);
+}
+
+.ten-years .row {
+    align-items: center;
+}
+.ten-years .row .col-2 {
+    padding: 0 50px;
+}
+.ten-years-img {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.ten-years-img img {
+    width: 50%;
+    height: 500px;
+    object-fit: cover;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.205) 0px 30px 60px -15px;
+}
+.ten-years .row .item {
+    padding: 0 50px 0 130px;
+}
+.ten-years .row .item h2 {
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    line-height: 50px;  
+}
+.ten-years .row .item h2 span {
+    font-weight: 700;
+    color: var(--blue)
+}
+.ten-years .row .item p {
+    padding: 20px 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    color: rgb(133, 133, 133);
+}
+.ten-years .row .item .text-behind {
+    position: absolute;
+    z-index: -1;
+    font-size: 260px;
+    top: 30px;
+    font-family: "Mr Dafoe";
+    color:rgb(230, 230, 230)
+}
+
+.stretch {
+    display: flex;
+    align-items: stretch;
+}
+
+.stretch .row {
+    flex: 1;
+}
+
+.gallery .row .col-2 {
+    display: flex;
+    flex-direction: column;
+    /* gap: 10px; */
+}
+
+.gallery {
+    padding: 150px 0;
+}
+
+.gallery .row .col-2 img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    padding: 10px;
+}
+
+.team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 100px 0;
+}
+
+.team .row {
+    padding: 0 50px;
+    gap: 0px;
+    flex-wrap: wrap;
+}
+
+.team-item-img {
+    position: relative;
+    overflow: hidden;
+    /* flex: 1; */
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
+}
+.team-item-img img {
+    width: 100%;
+    padding: 15px;
+    display: block;
+}
+
+.team-item-info {
+    position: absolute;
+    color: #fff;
+    height: 200px;
+    width: 300px;
+    right: 0;
+    top: 50%;
+    padding: 10px 30px;
+    background: var(--blue);
+    transform: translate(100%, -50%);
+    opacity: 0;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+}
+.team-item-info h4 {
+    font-size: 30px;
+}
+.team-item-info .social {
+    margin-top: 10px;
+}
+
+.team-item:hover .team-item-info {
+    transform: translate(0%, -50%);
+    opacity: 0.95;
+}
+
+.pl-0 img {
+    padding-left: 0;
+}
+
+.pr-0 img {
+    padding-right: 0;
+}
+
+
+footer {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0c0c0c;
+    color: #fff;
+}
 
 @media (max-width: 1140px) {
 
@@ -339,6 +529,26 @@ h1, h2, h3 {
         flex: 0 0 50%;
         max-width: 50%;
     }
+
+    .ten-years .row {
+        flex-direction: column;
+    }
+
+    .ten-years .row .item {
+        text-align: center;
+        margin-top: 120px;
+        margin-bottom: 80px;
+        padding: 0 80px;
+    }
+
+    .ten-years-img {
+        justify-content: center;
+    }
+
+    .gallery .row {
+        flex-direction: column;
+    }
+
 }
 
 @media (max-width: 700px) {
@@ -353,6 +563,12 @@ h1, h2, h3 {
         flex: 0 0 100%;
         max-width: 100%;
         height: 400px;
+    }
+
+    .team .row .col-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        height: auto;
     }
 
     .video-text {
