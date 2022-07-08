@@ -34,7 +34,7 @@
 
     <main>
         <article>
-            <section class="prestations">
+            <section class="prestations pt-0">
                 <div class="row">
                     <div class="prestation-item col-4">
                         <div class="prestation-text">
@@ -90,7 +90,21 @@
             </section>
 
             <!-- SECTION SURF LESSONS -->
-            
+            <section class="section-txt-images">
+                <div class="row">
+                    <div class="item col-2">
+                        <h2><span>TOP</span> SURF LESSONS</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, con secte tur adip si cin elit, do eius mod tempor in cidi dunt ut la bore magna aliquat enim ad.
+                        </p>
+                        <img src="img/h1-img-31.png" alt="">
+                    </div>
+                    <div class="section-txt-images-img col-2">
+                        <img class="photo1" src="img/h1-img-6-600x806.jpg" alt="">
+                        <img class="photo2" src="img/h1-img-5-600x834.jpg" alt="">
+                    </div>
+                </div>
+            </section>
             
             <!-- SECTION SURF EVENTS -->
             <section class="events">
@@ -189,7 +203,7 @@
                 </div>
             </section>
 
-            <section class="ten-years">
+            <section class="section-txt-images">
                 <div class="row">
                     <div class="item col-2">
                         <p class="text-behind">10</p>
@@ -200,7 +214,7 @@
                         </p>
                         <a href="" class="btn">Find out now</a>
                     </div>
-                    <div class="ten-years-img col-2">
+                    <div class="section-txt-images-img col-2">
                         <img src="img/h1-img-12-600x767.jpg" alt="">
                         <img src="img/h1-img-11-600x767.jpg" alt="">
                     </div>
@@ -243,6 +257,12 @@
             <section class="map"></section>
 
             <section class="team">
+
+                <div class="text-heading">
+                    <h2>OUR TEAM</h2>
+                    <p>Ex gubergren consequat forensibus mea, primis tritani dissentiunt ad mea, per id habeo utamur erroribus.</p>
+                </div>
+
                 <div class="row">
                     <div class="team-item col-4">
                         <div class="team-item-img">
@@ -299,6 +319,36 @@
                 </div>
             </section>
 
+            <section class="thumbs">
+                <div class="row">
+                    <div class="thumb-item col-6">
+                        <img src="img/thumb-1.jpg" alt="">
+                        <div class="overlay"><ion-icon name="logo-instagram"></ion-icon></div>
+                    </div>
+                    <div class="thumb-item col-6">
+                        <img src="img/thumb-2.jpg" alt="">
+                        <div class="overlay"><ion-icon name="logo-instagram"></ion-icon></div>
+                    </div>
+                    <div class="thumb-item col-6">
+                        <img src="img/thumb-3.jpg" alt="">
+                        <div class="overlay"><ion-icon name="logo-instagram"></ion-icon></div>
+                    </div>
+                    <div class="thumb-item col-6">
+                        <img src="img/thumb-4.jpg" alt="">
+                        <div class="overlay"><ion-icon name="logo-instagram"></ion-icon></div>
+                    </div>
+                    <div class="thumb-item col-6">
+                        <img src="img/thumb-5.jpg" alt="">
+                        <div class="overlay"><ion-icon name="logo-instagram"></ion-icon></div>
+                    </div>
+                    <div class="thumb-item col-6">
+                        <img src="img/thumb-6.jpg" alt="">
+                        <div class="overlay"><ion-icon name="logo-instagram"></ion-icon></div>
+                    </div>
+                </div>
+            </section>
+
+
         </article>
     </main>
 
@@ -308,5 +358,25 @@
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script>
+        // When the user scrolls the page, execute myFunction
+        window.onscroll = function() {stickyNav()};
+
+        // Get the navbar
+        var navbar = document.querySelector("nav");
+
+        // Get the offset position of the navbar
+        var sticky = 250;
+
+        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function stickyNav() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
 </body>
 </html>
