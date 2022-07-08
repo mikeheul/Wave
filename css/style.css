@@ -82,6 +82,11 @@ section {
     padding-top: 0;
 }
 
+.pb-0 {
+    padding-bottom: 0;
+}
+
+/** -------------------- HEADER ---------------------------------------------------------- */
 header {
     min-height: 100%;
 }
@@ -177,6 +182,7 @@ h1, h2, h3 {
     width: 330px;
 }
 
+/** -------------------- PRESTATIONS ---------------------------------------------------------- */
 .prestations {
     display: flex;
     flex-direction: column;
@@ -233,6 +239,7 @@ h1, h2, h3 {
     font-weight: 700;
 }
 
+/** -------------------- VIDEO ---------------------------------------------------------- */
 .video {
     display: flex;
     justify-content: center;
@@ -307,6 +314,7 @@ h1, h2, h3 {
     display: inline-flex;
 }
 
+/** --------------------EVENTS ---------------------------------------------------------- */
 .event {
     display: flex;
     justify-content: center;
@@ -356,6 +364,7 @@ h1, h2, h3 {
     filter: grayscale(1);
 }
 
+/** -------------------- ABILITIES ---------------------------------------------------------- */
 .abilities .row {
     margin-top: 30px;
     gap: 0px;
@@ -377,6 +386,7 @@ h1, h2, h3 {
     color: rgb(133, 133, 133);
 }
 
+/** -------------------- SECTION TXT IMAGES ------------------------------------------------- */
 .section-txt-images .row {
     align-items: center;
 }
@@ -441,6 +451,7 @@ h1, h2, h3 {
     flex: 1;
 }
 
+/** -------------------- GALLERY ---------------------------------------------------------- */
 .gallery .row .col-2 {
     display: flex;
     flex-direction: column;
@@ -459,6 +470,7 @@ h1, h2, h3 {
     padding: 10px;
 }
 
+/** -------------------- TEAM ---------------------------------------------------------- */
 .team {
     display: flex;
     justify-content: center;
@@ -522,7 +534,11 @@ h1, h2, h3 {
     font-size: 30px;
 }
 .team-item-info .social {
-    margin-top: 10px;
+    margin-top: 20px;
+}
+.team-item-info .social a {
+    color: #fff;
+    font-size: 20px;
 }
 
 .team-item:hover .team-item-info {
@@ -538,10 +554,13 @@ h1, h2, h3 {
     padding-right: 0;
 }
 
-
+/** -------------------- THUMBNAIL ---------------------------------------------------------- */
 .thumb-item img {
     position: relative;
     width: 100%;
+    transition: 1s;
+    overflow: hidden;
+    display: block;
 }
 .thumb-item .overlay {
     position: absolute;
@@ -558,8 +577,8 @@ h1, h2, h3 {
 }
 .thumb-item .overlay ion-icon {
     color: #fff;
-    padding: 20px;
     background: var(--blue);
+    padding: 20px;
     font-size: 20px;
     cursor: pointer;
 }
@@ -568,6 +587,7 @@ h1, h2, h3 {
     transform: scale(1);
 }
 
+/** -------------------- FOOTER ---------------------------------------------------------- */
 footer {
     height: 200px;
     display: flex;
@@ -577,16 +597,17 @@ footer {
     color: #fff;
 }
 
+/** -------------------- MEDIA QUERIES --------------------------------------------------- */
 @media (max-width: 1140px) {
-
+    
     .section-p {
         padding: 20px;
     }
-
+    
     nav {
         display: none;
     }
-
+    
     .video .row {
         flex-direction: column;
     }
@@ -637,6 +658,19 @@ footer {
         flex-direction: column;
     }
 
+}
+
+@media(max-width: 880px) {
+    .thumbs .row {
+        flex-direction: column;
+        padding: 0 10px;
+        gap: 20px;
+    }
+
+    .thumbs .row .col-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
 }
 
 @media (max-width: 700px) {
