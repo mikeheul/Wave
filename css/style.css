@@ -182,6 +182,18 @@ h1, h2, h3 {
     width: 330px;
 }
 
+.overlay-img {
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, #56c7bfa9 0%, rgba(0,0,0,0) 100%);
+    opacity: 0;
+    transition: 0.5s;
+}
+
 /** -------------------- PRESTATIONS ---------------------------------------------------------- */
 .prestations {
     display: flex;
@@ -203,6 +215,7 @@ h1, h2, h3 {
 }
 
 .prestation-text {
+    position: absolute;
     width: 60%;
     margin: auto;
     z-index: 1;
@@ -218,7 +231,7 @@ h1, h2, h3 {
 }
 
 .prestation-item img {
-    position: absolute;
+    position: relative;
     object-fit: cover;
     width: 100%;
     height: 100%;
@@ -227,6 +240,10 @@ h1, h2, h3 {
 
 .prestation-item:hover img {
     transform: scale(1.1);
+}
+.prestation-item:hover .overlay-img {
+    top: 0;
+    opacity: 1;
 }
 
 .prestation-item .badge {
@@ -252,6 +269,10 @@ h1, h2, h3 {
     flex-wrap: wrap;
 }
 
+.video .row .col-2 {
+    overflow: hidden;
+}
+
 .video-img {
     display: flex;
     justify-content: center;
@@ -274,7 +295,7 @@ h1, h2, h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: .5s;
+    transition-duration: 1s;
     cursor: pointer;
 }
 .play-button ion-icon {
@@ -282,7 +303,9 @@ h1, h2, h3 {
     color: #fff;
 }
 .play-button:hover {
-    transform: scale(1.1);
+    border-radius: 0;
+    height: 200%;
+    width: 200%;
 }
 
 .video-text {
