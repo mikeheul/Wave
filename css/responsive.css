@@ -1,0 +1,107 @@
+/** -------------------- MEDIA QUERIES --------------------------------------------------- */
+@media (max-width: 1140px) {
+    
+    .section-p {
+        padding: 20px;
+    }
+    
+    nav {
+        display: none;
+    }
+    
+    .video .row {
+        flex-direction: column;
+    }
+
+    .video-img img {
+        width: 100%;
+    }
+
+    .video-text h1 {
+        text-align: center;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .row .col-2 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .video-text {
+        text-align: center;
+        align-items: center;
+        padding: 10px 50px;
+    }
+
+    .row .col-4 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .section-txt-images .row {
+        flex-direction: column;
+    }
+
+    .section-txt-images .row .item {
+        text-align: center;
+        margin-top: 120px;
+        margin-bottom: 80px;
+        padding: 0 80px;
+    }
+
+    .section-txt-images-img {
+        /* justify-content: center; */
+        margin: auto;
+    }
+
+    .gallery .row {
+        flex-direction: column;
+    }
+
+}
+
+@media(max-width: 880px) {
+    .thumbs .row {
+        flex-direction: column;
+        padding: 0 10px;
+        gap: 20px;
+    }
+
+    .thumbs .row .col-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .header-hero img {
+        width: 80%;
+        margin: auto;
+        padding: 0;
+    }
+
+    .row .col-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        height: 400px;
+    }
+
+    .team .row .col-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .video-text {
+        display: none;
+    }
+
+    .section-txt-images-img {
+        flex-direction: column;
+    }
+    .section-txt-images-img img {
+        width: 100%;
+    }
+}
